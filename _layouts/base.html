@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html>
+<head>
+  {% include header.html %}
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      {% include navside.html %}
+      <div class="col-md-13 col-lg-13 col-sm-13 col-xs-13 aside3">
+        <div id="container">
+          <div id="pjax">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<script type='text/javascript'>
+function addLink() {
+    var body_element = document.getElementsByTagName('body')[0];
+    var selection;
+if(window.getSelection){//DOM,FF,Webkit,Chrome,IE10
+selection = window.getSelection();
+alert("版权声明，原文来自——静夜思碎："+document.location.href);
+ 
+}else if(document.getSelection){//IE10
+selection= document.getSelection();
+alert("版权声明，原文来自——静夜思碎："+document.location.href);
+ 
+}else if(document.selection){//IE6+10-
+selection= document.selection.createRange().text;
+alert("版权声明，原文来自——静夜思碎："+document.location.href);
+}else{
+selection= "";
+alert("浏览器兼容问题导致复制失败！");
+}
+}
+document.body.oncopy = addLink;
+</script>
+
+  {% include footer.html %}
+  {% include googleanalytics.html %}
+</body>
+</html>

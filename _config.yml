@@ -1,0 +1,48 @@
+﻿permalink: /:year/:month/:day/:title.html
+paginate: 10
+markdown: kramdown
+
+# 作者信息
+author: 
+  name: Alex Wu
+  email: testdomain1@3un4.com
+  link: http://3un4.com
+  weibo: 
+  github: https://github.com/FlyAcross
+  music: http://music.163.com/#/user/home?id=56261992
+  linkedin: 
+
+# 站点信息
+title: 静夜思碎
+description: My personal blog
+url: http://3un4.com
+rss_url: /pages/atom.xml
+
+# gavatar头像及Favicon
+gavatar: /public/img/deer3.png
+favicon: /public/img/deer3.png
+
+# google analytics 设置
+ga:
+  id: UA-78887529-1
+  url: 3un4.com
+
+
+# disqus 设置
+disqus:
+  shortname: 3un4
+
+# 主题设置，自动激活某个标签
+active: 遇见思考
+
+# 首页除了最新文章外显示分类
+cates: 
+  - 影音时光
+  - 遇见思考
+
+# 中文本地化
+locals:
+  tags: 标签
+  about: 关于
+  newest: 最新文章
+  archive: 归档
